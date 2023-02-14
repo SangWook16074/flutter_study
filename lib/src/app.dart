@@ -1,4 +1,6 @@
 import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
+import 'package:blog_example/src/pages/container.dart';
+import 'package:blog_example/src/pages/row_column.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -18,8 +20,8 @@ class _AppState extends State<App> {
       body: ListView(
         children: [
           _buildItems('1. bottomNavigationBar', BottomNav()),
-          _buildItems('2. Container', BottomNav()),
-          _buildItems('3. Row & Column', BottomNav()),
+          _buildItems('2. Container', ContainerPage()),
+          _buildItems('3. Row & Column', RowColumn()),
         ],
       ),
     );
