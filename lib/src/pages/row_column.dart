@@ -12,7 +12,7 @@ class _RowColumnState extends State<RowColumn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Container App'),
+        title: Text('Row & Column'),
       ),
       body: Row(
         children: [
