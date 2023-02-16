@@ -9,7 +9,10 @@ class TextFieldPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('TextField'),
       ),
-      body: Center(child: TextField()),
+      body: Center(
+          child: TextField(
+        decoration: InputDecoration(border: InputBorder.none),
+      )),
     );
   }
 }
