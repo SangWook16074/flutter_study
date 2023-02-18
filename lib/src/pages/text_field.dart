@@ -5,31 +5,58 @@ class TextFieldPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              _buildCustomTextField('사용자 이름, 이메일 주소 또는 휴대폰 번호'),
-              SizedBox(
-                height: 15,
-              ),
-              _buildCustomTextField('비밀번호'),
-            ]),
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                CustomTextField(
+                    label: '아이디', icon: Icon(Icons.account_circle_rounded)),
+                SizedBox(
+                  height: 15,
+                ),
+                CustomTextField(
+                  label: '비밀번호',
+                  icon: Icon(Icons.lock),
+                  isPrivate: true,
+                )
+              ]),
+        ),
       ),
     );
   }
+}
 
-  Widget _buildCustomTextField(String label) {
+class CustomTextField extends StatelessWidget {
+  const CustomTextField(
+      {Key? key,
+      required this.label,
+      required this.icon,
+      this.isPrivate = false})
+      : super(key: key);
+
+  final String label;
+  final Icon icon;
+  final bool isPrivate;
+
+  @override
+  Widget build(BuildContext context) {
     final focusColor = Colors.black;
     final unfocusColor = Colors.grey;
     return TextField(
       cursorColor: focusColor,
+      obscureText: isPrivate,
+      keyboardType: (isPrivate) ? TextInputType.number : TextInputType.text,
       decoration: InputDecoration(
-          prefixIcon: Icon(Icons.account_circle_rounded),
+          iconColor: focusColor,
+          prefixIcon: icon,
+          prefixIconColor: focusColor,
+          suffixIcon: Icon(Icons.close),
           focusColor: focusColor,
           fillColor: Colors.white,
           filled: true,
