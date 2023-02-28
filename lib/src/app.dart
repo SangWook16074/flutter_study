@@ -1,5 +1,6 @@
 import 'package:blog_example/src/pages/alert_dialog.dart';
 import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
+import 'package:blog_example/src/pages/buttons.dart';
 import 'package:blog_example/src/pages/container.dart';
 import 'package:blog_example/src/pages/row_column.dart';
 import 'package:blog_example/src/pages/text_field.dart';
@@ -25,7 +26,8 @@ class _AppState extends State<App> {
           _buildItems('2. Container', ContainerPage()),
           _buildItems('3. Row & Column', RowColumn()),
           _buildItems('4. TextField', TextFieldPage()),
-          _buildItems('5. AlertDialog', AlertDialogPage()),
+          _buildItems('5. Buttons', Buttons()),
+          _buildItems('6. AlertDialog', AlertDialogPage()),
         ],
       ),
     );
