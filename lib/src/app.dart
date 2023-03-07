@@ -8,6 +8,8 @@ import 'package:blog_example/src/pages/row_column.dart';
 import 'package:blog_example/src/pages/text_field.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/grid_view.dart';
+
 class App extends StatefulWidget {
   const App({super.key});
 
@@ -32,6 +34,7 @@ class _AppState extends State<App> {
           _buildItems('6. AlertDialog', AlertDialogPage()),
           _buildItems('7. ListView', ListViewPage()),
           _buildItems('8. PageView', PageViewPage()),
+          _buildItems('9. GridView', GridViewPage()),
         ],
       ),
     );
