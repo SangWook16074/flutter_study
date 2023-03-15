@@ -3,6 +3,7 @@ import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
 import 'package:blog_example/src/pages/buttons.dart';
 import 'package:blog_example/src/pages/container.dart';
 import 'package:blog_example/src/pages/list_view.dart';
+import 'package:blog_example/src/pages/loading.dart';
 import 'package:blog_example/src/pages/page_view.dart';
 import 'package:blog_example/src/pages/row_column.dart';
 import 'package:blog_example/src/pages/text_field.dart';
@@ -35,6 +36,7 @@ class _AppState extends State<App> {
           _buildItems('7. ListView', ListViewPage()),
           _buildItems('8. PageView', PageViewPage()),
           _buildItems('9. GridView', GridViewPage()),
+          _buildItems('10. Loading', Loading()),
         ],
       ),
     );
