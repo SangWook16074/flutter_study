@@ -1,4 +1,5 @@
 import 'package:blog_example/src/pages/alert_dialog.dart';
+import 'package:blog_example/src/pages/app_bar.dart';
 import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
 import 'package:blog_example/src/pages/buttons.dart';
 import 'package:blog_example/src/pages/container.dart';
@@ -37,6 +38,7 @@ class _AppState extends State<App> {
           _buildItems('8. PageView', PageViewPage()),
           _buildItems('9. GridView', GridViewPage()),
           _buildItems('10. Loading', Loading()),
+          _buildItems('10. AppBar', AppBarPage()),
         ],
       ),
     );
