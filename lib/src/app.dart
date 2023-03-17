@@ -10,6 +10,7 @@ import 'package:blog_example/src/pages/row_column.dart';
 import 'package:blog_example/src/pages/text_field.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/floating_action_button.dart';
 import 'pages/grid_view.dart';
 
 class App extends StatefulWidget {
@@ -39,6 +40,7 @@ class _AppState extends State<App> {
           _buildItems('9. GridView', GridViewPage()),
           _buildItems('10. Loading', Loading()),
           _buildItems('10. AppBar', AppBarPage()),
+          _buildItems('11. Floating Action Button', FAB()),
         ],
       ),
     );
