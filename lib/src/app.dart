@@ -3,6 +3,7 @@ import 'package:blog_example/src/pages/app_bar.dart';
 import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
 import 'package:blog_example/src/pages/buttons.dart';
 import 'package:blog_example/src/pages/container.dart';
+import 'package:blog_example/src/pages/drop_down_button.dart';
 import 'package:blog_example/src/pages/list_view.dart';
 import 'package:blog_example/src/pages/loading.dart';
 import 'package:blog_example/src/pages/page_view.dart';
@@ -41,6 +42,7 @@ class _AppState extends State<App> {
           _buildItems('10. Loading', Loading()),
           _buildItems('10. AppBar', AppBarPage()),
           _buildItems('11. Floating Action Button', FAB()),
+          _buildItems('12. DropDonwButton', DropDownButtonPage()),
         ],
       ),
     );
