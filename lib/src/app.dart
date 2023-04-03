@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/floating_action_button.dart';
 import 'pages/grid_view.dart';
+import 'pages/slider_page.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -40,9 +41,10 @@ class _AppState extends State<App> {
           _buildItems('8. PageView', PageViewPage()),
           _buildItems('9. GridView', GridViewPage()),
           _buildItems('10. Loading', Loading()),
-          _buildItems('10. AppBar', AppBarPage()),
-          _buildItems('11. Floating Action Button', FAB()),
-          _buildItems('12. DropDonwButton', DropDownButtonPage()),
+          _buildItems('11. AppBar', AppBarPage()),
+          _buildItems('12. Floating Action Button', FAB()),
+          _buildItems('13. DropDonwButton', DropDownButtonPage()),
+          _buildItems('14. Slider', SliderPage()),
         ],
       ),
     );
