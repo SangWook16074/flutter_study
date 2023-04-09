@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/floating_action_button.dart';
 import 'pages/grid_view.dart';
+import 'pages/scroll_bar_page.dart';
 import 'pages/slider_page.dart';
 
 class App extends StatefulWidget {
@@ -45,6 +46,7 @@ class _AppState extends State<App> {
           _buildItems('12. Floating Action Button', FAB()),
           _buildItems('13. DropDonwButton', DropDownButtonPage()),
           _buildItems('14. Slider', SliderPage()),
+          _buildItems('15. ScrollBar', ScrollBarPage()),
         ],
       ),
     );
