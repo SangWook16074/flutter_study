@@ -11,10 +11,12 @@ import 'package:blog_example/src/pages/row_column.dart';
 import 'package:blog_example/src/pages/text_field.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/date_picker.dart';
 import 'pages/floating_action_button.dart';
 import 'pages/grid_view.dart';
 import 'pages/scroll_bar_page.dart';
 import 'pages/slider_page.dart';
+import 'pages/time_picker.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -47,6 +49,8 @@ class _AppState extends State<App> {
           _buildItems('13. DropDonwButton', DropDownButtonPage()),
           _buildItems('14. Slider', SliderPage()),
           _buildItems('15. ScrollBar', ScrollBarPage()),
+          _buildItems('16. TimePicker', TimePicker()),
+          _buildItems('17. DatePicker', DatePicker()),
         ],
       ),
     );
