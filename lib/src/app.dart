@@ -4,6 +4,7 @@ import 'package:blog_example/src/pages/bottoma_nav/bottom_nav.dart';
 import 'package:blog_example/src/pages/buttons.dart';
 import 'package:blog_example/src/pages/container.dart';
 import 'package:blog_example/src/pages/drop_down_button.dart';
+import 'package:blog_example/src/pages/first.dart';
 import 'package:blog_example/src/pages/list_view.dart';
 import 'package:blog_example/src/pages/loading.dart';
 import 'package:blog_example/src/pages/page_view.dart';
@@ -51,6 +52,7 @@ class _AppState extends State<App> {
           _buildItems('15. ScrollBar', ScrollBarPage()),
           _buildItems('16. TimePicker', TimePicker()),
           _buildItems('17. DatePicker', DatePicker()),
+          _buildItems('18. Navigator', First()),
         ],
       ),
     );

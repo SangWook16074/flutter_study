@@ -1,4 +1,5 @@
 import 'package:blog_example/src/app.dart';
+import 'package:blog_example/src/pages/second.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: App(),
+      routes: {
+        '/Second': (context) => Second(),
+      },
     );
   }
 }
